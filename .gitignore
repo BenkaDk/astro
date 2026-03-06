@@ -7,6 +7,7 @@ dist/
 wheels/
 *.egg-info
 game_state.jsonl
+astro/main
 # Virtual environments
 .venv
 =======
