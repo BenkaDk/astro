@@ -6,6 +6,7 @@ build/
 dist/
 wheels/
 *.egg-info
+game_events.jsonl
 game_state.jsonl
 astro/main
 # Virtual environments
