@@ -16,3 +16,5 @@
 
 ### Completed ✓
 - [x] Moving astroids
+- [x] Make shooting possible
+
