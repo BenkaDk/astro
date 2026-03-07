@@ -1,7 +1,6 @@
 # Project from boot.dev - Learning by doing
 
 ### TODO list
-- [ ] Add a scoring system
 - [ ] Implement multiple lives and respawning
 - [ ] Add an explosion effect for the asteroids
 - [ ] Add acceleration to the player movement
@@ -17,4 +16,6 @@
 ### Completed ✓
 - [x] Moving astroids
 - [x] Make shooting possible
+- [x] Add a scoring system
+
 
