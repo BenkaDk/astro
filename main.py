@@ -11,6 +11,7 @@ from constants import (
     SCORE_MEDIUM_ASTEROID,
     SCORE_SMALL_ASTEROID,
 )
+from explosion import Explosion, Particle
 from logger import log_event, log_state
 from player import Player
 from shot import Shot
@@ -25,9 +26,11 @@ def main():
     drawable = pygame.sprite.Group()
     asteroids = pygame.sprite.Group()
     shots = pygame.sprite.Group()
+    particles = pygame.sprite.Group()
 
     Asteroid.containers = (asteroids, updatable, drawable)
     Shot.containers = (shots, updatable, drawable)
+    Particle.containers = (particles, updatable, drawable)
     AsteroidField.containers = updatable
     asteroid_field = AsteroidField()
 
@@ -68,6 +71,9 @@ def main():
                     if asteroid.collides_with(shot):
                         log_event("asteroid_shot")
                         shot.kill()
+                        
+                        # Create explosion effect
+                        Explosion(asteroid.position.x, asteroid.position.y, asteroid.radius, particles)
                         
                         # Calculate points based on asteroid size
                         if asteroid.radius == ASTEROID_MIN_RADIUS * 3:
