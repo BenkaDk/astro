@@ -5,6 +5,7 @@ from player import Player
 from asteroid import Asteroid
 from asteroidfield import AsteroidField
 
+
 def main():
     print("Starting Asteroids...")
     print(f"Screen width: {SCREEN_WIDTH}")
