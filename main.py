@@ -1,5 +1,4 @@
 import sys
-
 import pygame
 from asteroid import Asteroid
 from asteroidfield import AsteroidField
